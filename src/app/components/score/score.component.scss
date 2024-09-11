@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    font-family: sans-serif;
+
+    img {
+        width: 400px;
+    }
+
+    .result {
+        color: green;
+    }
+}

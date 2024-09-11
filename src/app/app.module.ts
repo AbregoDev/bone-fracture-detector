@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ScoreComponent } from './components/score/score.component';
+import { UploadImageComponent } from './components/upload-image/upload-image.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScoreComponent,
+    UploadImageComponent
   ],
   imports: [
     BrowserModule,
