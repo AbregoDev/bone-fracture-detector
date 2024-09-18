@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterContentChecked, Component, OnInit } from '@angular/core';
 import { UserService } from '../../user.service';
 import { ActivatedRoute } from '@angular/router';
 
