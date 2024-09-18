@@ -1,5 +1,18 @@
 <div class="container">
-    <p>Suba una imagen para buscar fracturas</p>
+    <h2>Paciente actual</h2>
+    <h3>{{ currentUser?.name }}</h3>
 
-    <button [routerLink]="['/score']">Detectar</button>
+    <div class="spacer"></div>
+    
+    <h2>Suba una imagen para buscar fracturas</h2>
+
+    <input type="file" #fileInput>
+
+    <button mat-flat-button color="primary" [disabled]="loading" (click)="sendImage()">
+        Detectar
+    </button>
+
+    @if (loading) {
+        <h3>Cargando</h3>
+    }
 </div>
