@@ -1,1 +1,20 @@
-<p>new-user works!</p>
+<div class="form-group">
+    <mat-form-field>
+        <mat-label>Nombre del paciente</mat-label>
+        <input type="text" matInput>    
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Dirección</mat-label>
+        <input type="text" matInput>    
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>CURP</mat-label>
+        <input type="text" matInput>    
+    </mat-form-field>
+
+    <button mat-flat-button color="primary" [disabled]="isLoading" (click)="createUser()">
+        Crear usuario
+    </button>
+</div>
