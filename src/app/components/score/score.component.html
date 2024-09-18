@@ -4,5 +4,6 @@
     <h2>Paciente: {{ currentUser?.name }}</h2>
     <img src="https://lportho.com/wp-content/uploads/2020/04/fracture-treatment-1-2000x1125.jpg">
 
-    <h2>Resultado de prueba: <span class="result">POSITIVO</span></h2>
+    <h2>Resultado de prueba: <span class="result">{{ result ? 'POSITIVO' : 'NEGATIVO' }}</span></h2>
+    <pre>Nivel de certeza: {{ value }}</pre>
 </div>
