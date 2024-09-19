@@ -3,7 +3,12 @@
 
     <p>Suba una imagen para buscar fracturas</p>
 
-    <input type="file" id="imageInput" accept="image/png, image/jpeg">
+    <input type="file" id="imageInput" accept="image/png, image/jpeg" (change)="onFileSelected($event)">
 
-    <button [routerLink]="['/score']">Detectar</button>
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="Image Preview" width="200" />
+
+    <button (click)="onUpload()">Detectar/Process</button>
+
+    <pre>{{apiResponse}}</pre>
+
 </div>
